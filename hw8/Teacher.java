@@ -1,15 +1,17 @@
-package HW8;
+package hw8;
 
-public class Student {
+public class Teacher {
 
     private String name;
     private String surname;
     private int age;
+    private Student student;
 
-    public Student(String name, String surname, int age) {
+    public Teacher (String name, String surname, int age, Student student) {
         this.name = name;
         this.surname = surname;
         this.age = age;
+        this.student = student;
     }
 
     public String getName() {
@@ -36,12 +38,21 @@ public class Student {
         this.age = age;
     }
 
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }
+
     @Override
     public String toString() {
-        return "Student{" +
+        return "Teacher{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", age=" + age +
+                ", student=" + student +
                 '}';
     }
 }
