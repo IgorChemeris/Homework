@@ -7,9 +7,6 @@ public class Main {
         Pilot pilot = new Pilot();
 
         driver.drive();
-        driver.fly();
-
-        pilot.drive();
         pilot.fly();
 
     }

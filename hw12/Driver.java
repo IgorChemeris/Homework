@@ -8,6 +8,6 @@ public class Driver extends Human {
 
     @Override
     public void fly() {
-        System.out.println("Водій літає");
+
     }
 }
